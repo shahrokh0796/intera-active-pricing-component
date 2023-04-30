@@ -7,7 +7,34 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello there </h1>
-    <img src="../images/bg-pattern.svg" alt="">
+    <div class="pricing-background-hero">
+        <img class="pricing-baclground-circles" src="./images/pattern-circles.svg" alt="circles">
+        <section class="pricing-preface">
+            <h1>Simple, traffic based pricing</h1>
+            <p>sign-up for our 30-day trial. No credit card required.</p>
+        </section>
+    </div>
+    
+    <main class="pricing-main">
+        <h2>100k Pageviews</h2>
+        <div class="pricing-range">
+            <label for="price"></label>
+            <input type="range" min="8" max="10"  id="price" name="price" />
+        </div>
+        <p><strong>$16.00 </strong><span>/month</span> </p>
+        <div class="pricing-toggle-monthly-yearly">
+            <em>Monthly Billing</em>
+            <button class="btn-toggle"><span>o</span></button>
+            <em>Yearly Billing<ins>-25%</ins></em>
+        </div>
+        <ul>
+            <li>unlimited websites</li>
+            <li>100% data owner ship</li>
+            <li>Email projects</li>
+        </ul>
+        <div>
+            <button>Start mytrial</button>
+        </div>
+    </main>
 </body>
 </html>

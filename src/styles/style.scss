@@ -1,9 +1,116 @@
 @font-face {
-    font-family: "Myfont";
-    src: url("../fonts/Manrope-Bold.woff2") format("woff2");
+  font-family: "boldfont";
+  src: url("../fonts/Manrope-Medium.woff2") format("woff2");
 }
 
-h1 {
-    font-family: "Myfont";
-    font-weight: bold;
+@font-face {
+  font-family: "mediumfont";
+  src: url("../fonts/Manrope-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "regularfont";
+  src: url("../fonts/Manrope-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "lightfont";
+  src: url("../fonts/Manrope-Semibold.woff2") format("woff2");
+}
+
+$soft-cyan: hsl(174, 77%, 80%);
+$trong-cyan: hsl(174, 86%, 45%);
+$light-grayish-red: hsl(14, 92%, 95%);
+$light-red: hsl(15, 100%, 70%);
+$pale-blue: hsl(226, 100%, 87%);
+$grayish-blue: hsl(225, 20%, 60%);
+$dark-desaturated-blue: hsl(227, 35%, 25%);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  // margin: 10px;
+  // padding: 10px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+}
+
+html {
+  font-size: 15px;
+}
+
+html,
+body {
+  min-block-size: 100%;
+  block-size: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "regularfont";
+  max-width: 1440px;
+  margin-inline: auto;
+  position: relative;
+  border: 1px solid red;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+.pricing-background-hero {
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-image: url(../images/bg-pattern.svg);
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-position: center start;
+  z-index: -1;
+  border: 1px solid green;
+}
+
+.pricing-baclground-circles {
+  margin-inline: auto;
+  margin-block-start: 5rem;
+}
+
+.pricing-preface {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 7.5rem;
+  text-align: center;
+  font-family: "boldfont";
+  font-size: 0.800rem;
+  inline-size: 80%;
+
+  h1 {
+    margin-block-end: 0.875rem;
+    color: $dark-desaturated-blue;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: $grayish-blue;
+    padding-inline: 4rem;
+  }
+}
+
+.pricing-main {
+  margin-block-start: 17rem;
+  margin-inline: 1.5rem;
+  text-align: center;
+}
+.pricing-toggle-monthly-yearly {
+  display: inline;
 }
