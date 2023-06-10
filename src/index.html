@@ -1,40 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Pricing Component</title>
 </head>
-<body>
+
+<body class="center">
     <div class="pricing-background-hero">
-        <img class="pricing-baclground-circles" src="./images/pattern-circles.svg" alt="circles">
+        <img class="pricing-background-circles center" src="./images/pattern-circles.svg" alt="circles" />
         <section class="pricing-preface">
             <h1>Simple, traffic based pricing</h1>
             <p>sign-up for our 30-day trial. No credit card required.</p>
         </section>
     </div>
-    
+
     <main class="pricing-main">
-        <h2>100k Pageviews</h2>
-        <div class="pricing-range">
-            <label for="price"></label>
-            <input type="range" min="8" max="10"  id="price" name="price" />
-        </div>
-        <p><strong>$16.00 </strong><span>/month</span> </p>
-        <div class="pricing-toggle-monthly-yearly">
-            <em>Monthly Billing</em>
-            <button class="btn-toggle"><span>o</span></button>
-            <em>Yearly Billing<ins>-25%</ins></em>
-        </div>
-        <ul>
-            <li>unlimited websites</li>
-            <li>100% data owner ship</li>
-            <li>Email projects</li>
-        </ul>
-        <div>
-            <button>Start mytrial</button>
+        <div class="pricing-container">
+            <div class="pricing-pg-views-price-container">
+                <h2 class="page">100k Pageviews</h2>
+                <p><strong class="price">$16.00 </strong><span>/month</span></p>
+            </div>
+            <div class="pricing-range">
+                <input type="range" min="0" max="100" id="price" name="price" value="50" step="25" />
+            </div>
+            <div class="pricing-toggle-monthly-yearly">
+                <em>Monthly Billing</em>
+                <form>
+                    <label class="switch">
+                        <input type="checkbox" name="" id="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </form>
+                <em>Yearly Billing<ins>-25% <span>discount</span></ins></em>
+            </div>
+            <hr class="hr-line">
+           <div class="pricing-benifits">
+            <ul>
+                <li>
+                    <img src="./images/icon-check.svg" alt="tick" />unlimited websites
+                </li>
+                <li>
+                    <img src="./images/icon-check.svg" alt="tick" />100% data owner ship
+                </li>
+                <li>
+                    <img src="./images/icon-check.svg" alt="tick" />Email projects
+                </li>
+            </ul>
+            <div>
+                <button>Start my trial</button>
+            </div>
+           </div>
         </div>
     </main>
 </body>
+
 </html>
